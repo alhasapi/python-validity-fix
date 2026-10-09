@@ -1,0 +1,108 @@
+=== post-reboot check 2026-10-09T09:50:50+01:00 ===
+boot id: 24834aaf-a046-4236-8a9f-7b554d069b23
+uptime:  up 1 week, 3 days, 21 hours, 16 minutes
+kernel:  7.2.5-3-omarchy
+
+ActiveState=active
+SubState=running
+StartLimitIntervalUSec=5min
+StartLimitBurst=5
+Restart=on-failure
+RestartUSec=5s
+NRestarts=0
+ExecMainStartTimestamp=Fri 2026-10-09 09:44:54 WAT
+ExecMainPID=2447910
+active: active active 
+suspend-hotfix enabled: disabled
+journal: Archived and active journals take up 440M in the file system.
+open-fprintd ExecStart: argv[]=/usr/lib/open-fprintd/open-fprintd 
+
+--- init errors since boot (expect none) ---
+Oct 06 18:31:55 <host> dbus-service[3856797]: Traceback (most recent call last):
+Oct 06 18:31:55 <host> dbus-service[3856797]:     raise USBTimeoutError(_strerror(ret), ret, _libusb_errno[ret])
+Oct 06 18:31:55 <host> dbus-service[3856797]: usb.core.USBTimeoutError: [Errno 110] Operation timed out
+Oct 06 18:31:55 <host> systemd[1]: python3-validity.service: Scheduled restart job, restart counter is at 671.
+Oct 06 18:32:10 <host> dbus-service[3857139]: Traceback (most recent call last):
+Oct 06 18:32:10 <host> dbus-service[3857139]:     raise USBTimeoutError(_strerror(ret), ret, _libusb_errno[ret])
+Oct 06 18:32:10 <host> dbus-service[3857139]: usb.core.USBTimeoutError: [Errno 110] Operation timed out
+Oct 06 18:32:11 <host> systemd[1]: python3-validity.service: Scheduled restart job, restart counter is at 672.
+Oct 06 18:32:26 <host> dbus-service[3857546]: Traceback (most recent call last):
+Oct 06 18:32:26 <host> dbus-service[3857546]:     raise USBTimeoutError(_strerror(ret), ret, _libusb_errno[ret])
+Oct 06 18:32:26 <host> dbus-service[3857546]: usb.core.USBTimeoutError: [Errno 110] Operation timed out
+Oct 06 18:32:26 <host> systemd[1]: python3-validity.service: Scheduled restart job, restart counter is at 673.
+Oct 06 18:32:42 <host> dbus-service[3857958]: Traceback (most recent call last):
+Oct 06 18:32:42 <host> dbus-service[3857958]:     raise USBTimeoutError(_strerror(ret), ret, _libusb_errno[ret])
+Oct 06 18:32:42 <host> dbus-service[3857958]: usb.core.USBTimeoutError: [Errno 110] Operation timed out
+Oct 06 18:32:42 <host> systemd[1]: python3-validity.service: Scheduled restart job, restart counter is at 674.
+Oct 06 18:32:57 <host> dbus-service[3858318]: Traceback (most recent call last):
+Oct 06 18:32:57 <host> dbus-service[3858318]:     raise USBTimeoutError(_strerror(ret), ret, _libusb_errno[ret])
+Oct 06 18:32:57 <host> dbus-service[3858318]: usb.core.USBTimeoutError: [Errno 110] Operation timed out
+Oct 06 18:32:57 <host> systemd[1]: python3-validity.service: Scheduled restart job, restart counter is at 675.
+=== post-reboot check 2026-10-09T09:59:47+01:00 ===
+boot id: 316dddc6-ef81-4256-b874-a2591ed75195
+uptime:  up 1 minute
+kernel:  7.2.5-3-omarchy
+
+ActiveState=active
+SubState=running
+StartLimitIntervalUSec=5min
+StartLimitBurst=5
+Restart=on-failure
+RestartUSec=5s
+NRestarts=0
+ExecMainStartTimestamp=Fri 2026-10-09 09:59:02 WAT
+ExecMainPID=1340
+active: active active 
+suspend-hotfix enabled: disabled
+journal: Archived and active journals take up 440M in the file system.
+open-fprintd ExecStart: argv[]=/usr/lib/open-fprintd/open-fprintd 
+
+--- init errors since boot (expect none) ---
+none
+--- debug hex dumps since boot (expect 0 from the new process) ---
+0
+
+--- sensor ---
+found 1 devices
+Device at /net/reactivated/Fprint/Device/0
+Using device /net/reactivated/Fprint/Device/0
+Fingerprints for user alhasapi on DBus driver (press):
+ - #0: right-index-finger
+ - #1: right-little-finger
+ - #2: left-index-finger
+ - #3: right-thumb
+
+=== post-reboot check 2026-10-09T10:01:38+01:00 ===
+boot id: c4977e89-b7cf-44bb-adc5-3ed4c639d869
+uptime:  up 1 minute
+kernel:  7.2.5-3-omarchy
+
+ActiveState=active
+SubState=running
+StartLimitIntervalUSec=5min
+StartLimitBurst=5
+Restart=on-failure
+RestartUSec=5s
+NRestarts=0
+ExecMainStartTimestamp=Fri 2026-10-09 10:00:53 WAT
+ExecMainPID=1348
+active: active active 
+suspend-hotfix enabled: disabled
+journal: Archived and active journals take up 452.1M in the file system.
+open-fprintd ExecStart: argv[]=/usr/lib/open-fprintd/open-fprintd 
+
+--- init errors since boot (expect none) ---
+none
+--- debug hex dumps since boot (expect 0 from the new process) ---
+0
+
+--- sensor ---
+found 1 devices
+Device at /net/reactivated/Fprint/Device/0
+Using device /net/reactivated/Fprint/Device/0
+Fingerprints for user alhasapi on DBus driver (press):
+ - #0: right-index-finger
+ - #1: right-little-finger
+ - #2: left-index-finger
+ - #3: right-thumb
+

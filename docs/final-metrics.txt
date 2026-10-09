@@ -1,0 +1,16 @@
+# Final metrics (2026-10-09T10:11:57+01:00)
+
+## Hardware validation
+- 2 reboots (docs/post-reboot.txt): both NRestarts=0, active, 0 init errors,
+  0 DEBUG dumps, 4 fingerprints listed.
+- 14 real suspend/resume cycles (docs/resume-matrix.txt): same PIDs, NRestarts=0,
+  in-process re-init each cycle, 0 init errors, 4 fingerprints after each.
+
+## Journal
+- disk usage: Archived and active journals take up 452.1M in the file system.  (was 4.1 GiB, cap 500 MiB)
+
+## Volume reduction
+- post-fix window: 53 lines over 1677s since 2026-10-09 09:44:00
+- projected: 2731 lines/day
+- vs 2026-10-01 debug-only day (113,639 lines/day): -97.6%
+- vs 2026-10-06 crash-loop day (258,073 lines/day): -98.9%

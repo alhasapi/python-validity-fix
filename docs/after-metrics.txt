@@ -1,0 +1,24 @@
+# Post-fix metrics (scoped to patched service start 2026-10-09 08:18:09)
+captured: 2026-10-09T08:21:38+01:00
+
+## Unit state
+ActiveState=active
+SubState=running
+StartLimitIntervalUSec=5min
+StartLimitBurst=5
+Restart=on-failure
+RestartUSec=5s
+NRestarts=0
+
+## Journal
+Archived and active journals take up 477.3M in the file system.
+
+## patched unit output since start
+lines: 96
+bytes: 9937
+DEBUG hex-dump lines: 7
+init tracebacks: 0
+
+## Baseline comparison
+pre-fix worst crash-loop day (2026-10-06): 5,267 starts / 258,073 lines
+pre-fix debug-only day   (2026-10-01): 2 starts / 113,639 lines

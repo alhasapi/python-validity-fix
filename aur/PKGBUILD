@@ -1,0 +1,58 @@
+# Maintainer: Pranav Sharma <pranav.sharma.ama@gmail.com>
+# Contributor: j.r <j.r@jugendhacker.de>
+# Contributor: Matthew Murray <matt@mattmurr.xyz>
+#
+# Local overlay: applies fix-init-recovery-and-journal-flood.patch (the
+# upstream candidate PR) on top of 0.15. Drop this patch + prepare() once the
+# PR is merged and a release is cut.
+pkgname=python-validity
+pkgver=0.15
+pkgrel=2
+pkgdesc="Validity fingerprint sensor driver"
+arch=(any)
+license=(MIT)
+depends=(python python-yaml python-pyusb python-cryptography python-dbus python-gobject 
+  innoextract "open-fprintd>=0.6" fprintd-clients glib2)
+makedepends=(python-setuptools glib2-devel)
+conflicts=($pkgname)
+provides=($pkgname)
+url="https://github.com/uunicorn/${pkgname}"
+source=(
+  "$pkgname-$pkgver.tar.gz::${url}/archive/${pkgver}.tar.gz"
+  python3-validity-suspend-hotfix.service 
+  fix-init-recovery-and-journal-flood.patch
+)
+md5sums=('7134839860dea1caafa5ae5024536385'
+         'cf8c944df027bbb349c56710c9755cbe'
+         'f12e905b2a3951056e322ffb59742357')
+install=$pkgname.install
+
+prepare() {
+  cd $srcdir/$pkgname-$pkgver
+  patch -Np1 -i "$srcdir/fix-init-recovery-and-journal-flood.patch"
+}
+
+build() {
+  cd $srcdir/$pkgname-$pkgver
+  python setup.py build
+}
+
+package() {
+  cd $srcdir/$pkgname-$pkgver
+  python setup.py install --prefix=/usr --root $pkgdir || return 1
+
+  sed -i 's/^Restart=.*/Restart=on-failure/' debian/python3-validity.service
+  install -D -m 644 debian/python3-validity.service \
+    $pkgdir/usr/lib/systemd/system/python3-validity.service
+
+  install -D -m 644 ../python3-validity-suspend-hotfix.service \
+    $pkgdir/usr/lib/systemd/system/python3-validity-suspend-hotfix.service
+
+  install -D -m 644 debian/python3-validity.udev \
+    $pkgdir/usr/lib/udev/rules.d/60-python-validity.rules
+
+  install -Dm644 LICENSE \
+    ${pkgdir}/usr/share/licenses/${pkgname}/LICENSE
+}
+
+# vim:set ts=2 sw=2 et:

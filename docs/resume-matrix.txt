@@ -1,0 +1,96 @@
+================ cycle 1 ================
+suspend requested: 2026-10-09T09:27:41+01:00
+before: pv_pid=2356699 ofd_pid=2356689 NRestarts=0
+resumed: 2026-10-09T09:27:41+01:00
+after:  pv_pid=2356699 ofd_pid=2356689 NRestarts=0 active=active/active
+pv_pid_same=yes  ofd_pid_same=yes
+in_process_reinit=0  init_errors=0  fprintd_index_found=1
+
+================ cycle 2 ================
+suspend requested: 2026-10-09T09:28:16+01:00
+before: pv_pid=2356699 ofd_pid=2356689 NRestarts=0
+resumed: 2026-10-09T09:28:16+01:00
+after:  pv_pid=2356699 ofd_pid=2356689 NRestarts=0 active=active/active
+pv_pid_same=yes  ofd_pid_same=yes
+in_process_reinit=1  init_errors=0  fprintd_index_found=1
+
+================ cycle 3 ================
+suspend requested: 2026-10-09T09:28:40+01:00
+before: pv_pid=2356699 ofd_pid=2356689 NRestarts=0
+resumed: 2026-10-09T09:28:41+01:00
+after:  pv_pid=2356699 ofd_pid=2356689 NRestarts=0 active=active/active
+pv_pid_same=yes  ofd_pid_same=yes
+in_process_reinit=0  init_errors=0  fprintd_index_found=1
+
+================ cycle 4 ================
+suspend requested: 2026-10-09T09:29:03+01:00
+before: pv_pid=2356699 ofd_pid=2356689 NRestarts=0
+resumed: 2026-10-09T09:29:04+01:00
+after:  pv_pid=2356699 ofd_pid=2356689 NRestarts=0 active=active/active
+pv_pid_same=yes  ofd_pid_same=yes
+in_process_reinit=1  init_errors=0  fprintd_index_found=1
+
+================ cycle 1 ================
+suspend requested: 2026-10-09T09:31:41+01:00
+before: pv_pid=2356699 ofd_pid=2356689 NRestarts=0
+resumed: 2026-10-09T09:31:41+01:00
+after:  pv_pid=2356699 ofd_pid=2356689 NRestarts=0 active=active/active
+pv_pid_same=yes  ofd_pid_same=yes
+in_process_reinit=0  init_errors=0  fprintd_index_found=1
+
+================ cycle 2 ================
+suspend requested: 2026-10-09T09:32:08+01:00
+before: pv_pid=2356699 ofd_pid=2356689 NRestarts=0
+resumed: 2026-10-09T09:32:08+01:00
+after:  pv_pid=2356699 ofd_pid=2356689 NRestarts=0 active=active/active
+pv_pid_same=yes  ofd_pid_same=yes
+in_process_reinit=1  init_errors=0  fprintd_index_found=1
+
+================ cycle 3 ================
+suspend requested: 2026-10-09T09:32:29+01:00
+before: pv_pid=2356699 ofd_pid=2356689 NRestarts=0
+resumed: 2026-10-09T09:32:30+01:00
+after:  pv_pid=2356699 ofd_pid=2356689 NRestarts=0 active=active/active
+pv_pid_same=yes  ofd_pid_same=yes
+in_process_reinit=0  init_errors=0  fprintd_index_found=1
+
+================ cycle 4 ================
+suspend requested: 2026-10-09T09:32:52+01:00
+before: pv_pid=2356699 ofd_pid=2356689 NRestarts=0
+resumed: 2026-10-09T09:32:53+01:00
+after:  pv_pid=2356699 ofd_pid=2356689 NRestarts=0 active=active/active
+pv_pid_same=yes  ofd_pid_same=yes
+in_process_reinit=0  init_errors=0  fprintd_index_found=1
+
+================ cycle 5 ================
+suspend requested: 2026-10-09T09:33:16+01:00
+before: pv_pid=2356699 ofd_pid=2356689 NRestarts=0
+resumed: 2026-10-09T09:33:16+01:00
+after:  pv_pid=2356699 ofd_pid=2356689 NRestarts=0 active=active/active
+pv_pid_same=yes  ofd_pid_same=yes
+in_process_reinit=0  init_errors=0  fprintd_index_found=1
+
+================ cycle 6 ================
+suspend requested: 2026-10-09T09:33:40+01:00
+before: pv_pid=2356699 ofd_pid=2356689 NRestarts=0
+resumed: 2026-10-09T09:33:40+01:00
+after:  pv_pid=2356699 ofd_pid=2356689 NRestarts=0 active=active/active
+pv_pid_same=yes  ofd_pid_same=yes
+in_process_reinit=1  init_errors=0  fprintd_index_found=1
+
+================ cycle 1 ================
+suspend requested: 2026-10-09T09:46:46+01:00
+before: pv_pid=2447910 ofd_pid=2447827 NRestarts=0
+resumed: yes at 2026-10-09T09:47:00+01:00
+after:  pv_pid=2447910 ofd_pid=2447827 NRestarts=0 active=active/active
+pv_pid_same=yes  ofd_pid_same=yes
+in_process_reinit=1  init_errors=0  fprintd_index_found=1
+
+================ cycle 2 ================
+suspend requested: 2026-10-09T09:47:10+01:00
+before: pv_pid=2447910 ofd_pid=2447827 NRestarts=0
+resumed: yes at 2026-10-09T09:47:25+01:00
+after:  pv_pid=2447910 ofd_pid=2447827 NRestarts=0 active=active/active
+pv_pid_same=yes  ofd_pid_same=yes
+in_process_reinit=1  init_errors=0  fprintd_index_found=1
+

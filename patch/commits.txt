@@ -1,0 +1,6 @@
+bcddb69 service: drop --debug default and throttle restarts
+7bebaab dbus: re-acquire the USB device on Resume
+5ee8b4f init: reset and re-open the sensor instead of crash-looping
+ce41c1a init: run send_init() before init_flash()
+6bc143f usb: retry transient 0x0104/0x0401 busy status during send_init
+4c0e245 flash: tolerate short/empty flash-info reply and never format an unknown IC
